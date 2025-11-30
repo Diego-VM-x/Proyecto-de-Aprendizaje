@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiegoVM (@diegovm_astro) / X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <header class="sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 24 24" class="icon-svg" style="height: 30px;">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </svg>
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link">
+                                <svg viewBox="0 0 24 24" class="icon-svg">
+                                    <path
+                                        d="M22 21.083V9.364c0-1.225-.98-2.22-2.185-2.22H18.8V2.917l-2.066.004v2.968l-3.32-2.768a2.177 2.177 0 0 0-2.828 0L2.185 9.364A2.224 2.224 0 0 0 0 11.584v9.499c0 1.225.98 2.22 2.185 2.22h19.815A2.224 2.224 0 0 0 22 21.083zM2.185 11.584l8.401-7.001 8.4 7.001v9.499H2.185v-9.499z">
+                                    </path>
+                                </svg>
+                                <span style="margin-left: 20px;">Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <svg viewBox="0 0 24 24" class="icon-svg">
+                                    <path
+                                        d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                                    </path>
+                                </svg>
+                                <span style="margin-left: 20px;">Explorar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <svg viewBox="0 0 24 24" class="icon-svg">
+                                    <path
+                                        d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.01 5.295L18.866 16H5.134z">
+                                    </path>
+                                </svg>
+                                <span style="margin-left: 20px;">Notificaciones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="nav-link active">
+                                <svg viewBox="0 0 24 24" class="icon-svg">
+                                    <path
+                                        d="M5.651 19h12.698c-.337-4.429-3.48-7.102-6.349-7.102-2.869 0-6.012 2.673-6.349 7.102zM12 10.177c2.372 0 4.302-1.92 4.302-4.289S14.372 1.6 12 1.6s-4.302 1.92-4.302 4.289 1.93 4.289 4.302 4.289zM20.35 19c-.353-5.552-4.444-9.102-8.35-9.102-3.906 0-7.996 3.55-8.35 9.102H1.6c.377-6.633 5.373-11.102 10.4-11.102 5.027 0 10.022 4.469 10.4 11.102h-2.05z">
+                                    </path>
+                                </svg>
+                                <span style="margin-left: 20px;">Perfil</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="tweet-btn">Postear</button>
+                </nav>
+            </div>
+
+            <div class="user-pill">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM" class="user-avatar">
+                <div class="user-info">
+                    <span class="name">DiegoVM</span>
+                    <span class="handle">@diegovm_astro</span>
+                </div>
+                <div style="margin-left: auto;">...</div>
+            </div>
+        </header>
+
+        <!-- Main Feed (Profile) -->
+        <main class="main-feed">
+            <div class="header">
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <a href="index.html" style="display: flex; align-items: center;">
+                        <svg viewBox="0 0 24 24" class="icon-svg" style="width: 20px;">
+                            <path
+                                d="M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div>
+                        <h1 style="margin: 0;">DiegoVM</h1>
+                        <div style="font-size: 13px; color: var(--text-secondary); font-weight: 400;">1,234 posts</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-header">
+                <div class="banner"></div>
+                <div class="profile-details">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM"
+                        class="profile-avatar">
+                    <button class="edit-profile-btn">Editar perfil</button>
+
+                    <div class="profile-info-text">
+                        <div class="profile-name">DiegoVM</div>
+                        <div class="profile-handle">@diegovm_astro</div>
+                        <div class="profile-bio">Amante de la astronomía 🔭 | Explorando el cosmos desde mi patio
+                            trasero | 🌌 Per aspera ad astra</div>
+
+                        <div class="profile-meta">
+                            <div class="meta-item">
+                                <svg viewBox="0 0 24 24" class="icon-svg"
+                                    style="width: 18px; color: var(--text-secondary);">
+                                    <path
+                                        d="M12 7c-1.93 0-3.5 1.57-3.5 3.5S10.07 14 12 14s3.5-1.57 3.5-3.5S13.93 7 12 7zm0 5c-.827 0-1.5-.673-1.5-1.5S11.173 9 12 9s1.5.673 1.5 1.5S12.827 12 12 12zm0-10c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 17.77c-1.665-1.241-6.5-5.196-6.5-9.27C5.5 6.916 8.416 4 12 4s6.5 2.916 6.5 6.5c0 4.073-4.835 8.028-6.5 9.27z">
+                                    </path>
+                                </svg>
+                                <span>Tierra</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg viewBox="0 0 24 24" class="icon-svg"
+                                    style="width: 18px; color: var(--text-secondary);">
+                                    <path
+                                        d="M19.708 2H4.292C3.028 2 2 3.028 2 4.292v15.416C2 20.972 3.028 22 4.292 22h15.416C20.972 22 22 20.972 22 19.708V4.292C22 3.028 20.972 2 19.708 2zm.792 17.708c0 .437-.355.792-.792.792H4.292c-.437 0-.792-.355-.792-.792V6.418c0-.437.354-.79.79-.792h15.42c.436 0 .79.355.79.792v13.29zM13.25 9c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25zM4.5 13.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 0c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm-4.5 0c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zM12 18c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z">
+                                    </path>
+                                </svg>
+                                <span>Se unió en noviembre de 2020</span>
+                            </div>
+                        </div>
+
+                        <div class="follow-stats">
+                            <div><span>245</span> Siguiendo</div>
+                            <div><span>8,432</span> Seguidores</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-nav">
+                    <div class="tab active">
+                        <span>Posts</span>
+                        <div class="tab-indicator"></div>
+                    </div>
+                    <a href="comments.html" class="tab">
+                        <span>Respuestas</span>
+                    </a>
+                    <div class="tab">
+                        <span>Destacados</span>
+                    </div>
+                    <div class="tab">
+                        <span>Fotos y videos</span>
+                    </div>
+                    <div class="tab">
+                        <span>Me gusta</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Tweets -->
+            <div class="post">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM" class="user-avatar">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="post-info">
+                            <span class="name">DiegoVM</span>
+                            <span class="handle">@diegovm_astro · 5h</span>
+                        </div>
+                        <div class="more-options">...</div>
+                    </div>
+                    <div class="post-text">Hoy es una noche perfecta para sacar el telescopio. Júpiter se ve
+                        increíblemente brillante. 🔭🪐 #AstronomiaAmateur #Espacio</div>
+                    <div class="post-footer">
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.295c-4.42 0-8.005-3.58-8.005-8h.045zm17.954 5.37c1.72-1 2.546-2.9 2.546-4.96 0-3.39-2.744-6.13-6.129-6.13H9.756c-3.314 0-6.005 2.69-6.005 6s2.691 6 6.005 6h1.455v2.73l5.54-3.07.954.43z">
+                                </path>
+                            </svg> 12</div>
+                        <div class="footer-icon retweet"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                </path>
+                            </svg> 3</div>
+                        <div class="footer-icon like"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.605 3.01.894 1.81.844 4.17-.518 6.67z">
+                                </path>
+                            </svg> 45</div>
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                </path>
+                            </svg> 200</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM" class="user-avatar">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="post-info">
+                            <span class="name">DiegoVM</span>
+                            <span class="handle">@diegovm_astro · 1d</span>
+                        </div>
+                        <div class="more-options">...</div>
+                    </div>
+                    <div class="post-text">¿Alguien más vio el paso de la ISS anoche? Fue espectacular. 🛰️</div>
+                    <div class="post-footer">
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.295c-4.42 0-8.005-3.58-8.005-8h.045zm17.954 5.37c1.72-1 2.546-2.9 2.546-4.96 0-3.39-2.744-6.13-6.129-6.13H9.756c-3.314 0-6.005 2.69-6.005 6s2.691 6 6.005 6h1.455v2.73l5.54-3.07.954.43z">
+                                </path>
+                            </svg> 5</div>
+                        <div class="footer-icon retweet"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                </path>
+                            </svg> 1</div>
+                        <div class="footer-icon like"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.605 3.01.894 1.81.844 4.17-.518 6.67z">
+                                </path>
+                            </svg> 32</div>
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg">
+                                <path
+                                    d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                </path>
+                            </svg> 150</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar (Widgets) -->
+        <aside class="widgets">
+            <div class="search-bar">
+                <svg viewBox="0 0 24 24" class="icon-svg" style="width: 18px; color: #71767b;">
+                    <path
+                        d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                    </path>
+                </svg>
+                <input type="text" placeholder="Buscar">
+            </div>
+
+            <div class="widget-box">
+                <div class="widget-header">Tal vez te guste</div>
+                <div class="trend-item" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Neil"
+                        style="width: 40px; height: 40px; border-radius: 50%;">
+                    <div>
+                        <div style="font-weight: 700;">Neil deGrasse Tyson</div>
+                        <div style="color: var(--text-secondary); font-size: 13px;">@neiltyson</div>
+                    </div>
+                    <button
+                        style="margin-left: auto; background: white; color: black; border: none; padding: 6px 16px; border-radius: 9999px; font-weight: 700; cursor: pointer;">Seguir</button>
+                </div>
+                <div class="trend-item" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Hubble"
+                        style="width: 40px; height: 40px; border-radius: 50%;">
+                    <div>
+                        <div style="font-weight: 700;">Hubble</div>
+                        <div style="color: var(--text-secondary); font-size: 13px;">@NASAHubble</div>
+                    </div>
+                    <button
+                        style="margin-left: auto; background: white; color: black; border: none; padding: 6px 16px; border-radius: 9999px; font-weight: 700; cursor: pointer;">Seguir</button>
+                </div>
+            </div>
+
+            <div class="widget-box">
+                <div class="widget-header">Qué está pasando</div>
+                <div class="trend-item">
+                    <div class="trend-meta">
+                        <span>Tecnología · Tendencia</span>
+                        <span>...</span>
+                    </div>
+                    <div class="trend-name">Inteligencia Artificial</div>
+                    <div class="trend-meta">150k posts</div>
+                </div>
+                <div class="trend-item">
+                    <div class="trend-meta">
+                        <span>Espacio · Tendencia</span>
+                        <span>...</span>
+                    </div>
+                    <div class="trend-name">Marte</div>
+                    <div class="trend-meta">89k posts</div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
