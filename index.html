@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio / X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+        <header class="sidebar">
+            <div class="sidebar-top">
+                <a href="index.html" class="logo">
+                    <svg viewBox="0 0 24 24" class="icon-svg" style="height: 30px;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link active">
+                                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M22 21.083V9.364c0-1.225-.98-2.22-2.185-2.22H18.8V2.917l-2.066.004v2.968l-3.32-2.768a2.177 2.177 0 0 0-2.828 0L2.185 9.364A2.224 2.224 0 0 0 0 11.584v9.499c0 1.225.98 2.22 2.185 2.22h19.815A2.224 2.224 0 0 0 22 21.083zM2.185 11.584l8.401-7.001 8.4 7.001v9.499H2.185v-9.499z"></path></svg>
+                                <span style="margin-left: 20px;">Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"></path></svg>
+                                <span style="margin-left: 20px;">Explorar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.01 5.295L18.866 16H5.134z"></path></svg>
+                                <span style="margin-left: 20px;">Notificaciones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="nav-link">
+                                <svg viewBox="0 0 24 24" class="icon-svg"><path d="M5.651 19h12.698c-.337-4.429-3.48-7.102-6.349-7.102-2.869 0-6.012 2.673-6.349 7.102zM12 10.177c2.372 0 4.302-1.92 4.302-4.289S14.372 1.6 12 1.6s-4.302 1.92-4.302 4.289 1.93 4.289 4.302 4.289zM20.35 19c-.353-5.552-4.444-9.102-8.35-9.102-3.906 0-7.996 3.55-8.35 9.102H1.6c.377-6.633 5.373-11.102 10.4-11.102 5.027 0 10.022 4.469 10.4 11.102h-2.05z"></path></svg>
+                                <span style="margin-left: 20px;">Perfil</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="tweet-btn">Postear</button>
+                </nav>
+            </div>
+            
+            <div class="user-pill">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM" class="user-avatar">
+                <div class="user-info">
+                    <span class="name">DiegoVM</span>
+                    <span class="handle">@diegovm_astro</span>
+                </div>
+                <div style="margin-left: auto;">...</div>
+            </div>
+        </header>
+
+        <!-- Main Feed -->
+        <main class="main-feed">
+            <div class="header">
+                <div class="header-tabs">
+                    <div class="tab active">
+                        <span>Para ti</span>
+                        <div class="tab-indicator"></div>
+                    </div>
+                    <div class="tab">
+                        <span>Siguiendo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweet-box">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM" class="user-avatar">
+                <div class="tweet-input-area">
+                    <textarea class="tweet-input" placeholder="¡¿Qué está pasando?!" rows="1"></textarea>
+                    <div class="tweet-actions">
+                        <div class="action-icons">
+                            <svg viewBox="0 0 24 24" class="icon-svg" style="color: #1d9bf0;"><path d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z"></path></svg>
+                            <svg viewBox="0 0 24 24" class="icon-svg" style="color: #1d9bf0;"><path d="M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13zM8 10a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm6 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path></svg>
+                        </div>
+                        <button class="post-btn">Postear</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tweets -->
+            <div class="post">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=NASA" alt="NASA" class="user-avatar">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="post-info">
+                            <span class="name">NASA</span>
+                            <span class="handle">@NASA · 2h</span>
+                        </div>
+                        <div class="more-options">...</div>
+                    </div>
+                    <div class="post-text">¡El telescopio James Webb acaba de capturar una nueva imagen de la Nebulosa de Orión! Es impresionante ver el nacimiento de nuevas estrellas. 🌌✨ #Astronomia #JamesWebb</div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Nebula">
+                    </div>
+                    <div class="post-footer">
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.295c-4.42 0-8.005-3.58-8.005-8h.045zm17.954 5.37c1.72-1 2.546-2.9 2.546-4.96 0-3.39-2.744-6.13-6.129-6.13H9.756c-3.314 0-6.005 2.69-6.005 6s2.691 6 6.005 6h1.455v2.73l5.54-3.07.954.43z"></path></svg> 234</div>
+                        <div class="footer-icon retweet"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></svg> 1.5k</div>
+                        <div class="footer-icon like"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.605 3.01.894 1.81.844 4.17-.518 6.67z"></path></svg> 12k</div>
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></svg> 560k</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=DiegoVM" alt="DiegoVM" class="user-avatar">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="post-info">
+                            <span class="name">DiegoVM</span>
+                            <span class="handle">@diegovm_astro · 5h</span>
+                        </div>
+                        <div class="more-options">...</div>
+                    </div>
+                    <div class="post-text">Hoy es una noche perfecta para sacar el telescopio. Júpiter se ve increíblemente brillante. 🔭🪐 #AstronomiaAmateur #Espacio</div>
+                    <div class="post-footer">
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.295c-4.42 0-8.005-3.58-8.005-8h.045zm17.954 5.37c1.72-1 2.546-2.9 2.546-4.96 0-3.39-2.744-6.13-6.129-6.13H9.756c-3.314 0-6.005 2.69-6.005 6s2.691 6 6.005 6h1.455v2.73l5.54-3.07.954.43z"></path></svg> 12</div>
+                        <div class="footer-icon retweet"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></svg> 3</div>
+                        <div class="footer-icon like"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.605 3.01.894 1.81.844 4.17-.518 6.67z"></path></svg> 45</div>
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></svg> 200</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=SpaceX" alt="SpaceX" class="user-avatar">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="post-info">
+                            <span class="name">SpaceX</span>
+                            <span class="handle">@SpaceX · 8h</span>
+                        </div>
+                        <div class="more-options">...</div>
+                    </div>
+                    <div class="post-text">Starship se está preparando para su próximo vuelo de prueba. ¡El futuro de la exploración espacial está cerca! 🚀🔴 #Starship #Marte</div>
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Rocket">
+                    </div>
+                    <div class="post-footer">
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.295c-4.42 0-8.005-3.58-8.005-8h.045zm17.954 5.37c1.72-1 2.546-2.9 2.546-4.96 0-3.39-2.744-6.13-6.129-6.13H9.756c-3.314 0-6.005 2.69-6.005 6s2.691 6 6.005 6h1.455v2.73l5.54-3.07.954.43z"></path></svg> 890</div>
+                        <div class="footer-icon retweet"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></svg> 5.2k</div>
+                        <div class="footer-icon like"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.605 3.01.894 1.81.844 4.17-.518 6.67z"></path></svg> 67k</div>
+                        <div class="footer-icon"><svg viewBox="0 0 24 24" class="icon-svg"><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></svg> 2.1M</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar (Widgets) -->
+        <aside class="widgets">
+            <div class="search-bar">
+                <svg viewBox="0 0 24 24" class="icon-svg" style="width: 18px; color: #71767b;"><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"></path></svg>
+                <input type="text" placeholder="Buscar">
+            </div>
+
+            <div class="widget-box">
+                <div class="widget-header">Qué está pasando</div>
+                <div class="trend-item">
+                    <div class="trend-meta">
+                        <span>Tecnología · Tendencia</span>
+                        <span>...</span>
+                    </div>
+                    <div class="trend-name">Inteligencia Artificial</div>
+                    <div class="trend-meta">150k posts</div>
+                </div>
+                <div class="trend-item">
+                    <div class="trend-meta">
+                        <span>Espacio · Tendencia</span>
+                        <span>...</span>
+                    </div>
+                    <div class="trend-name">Marte</div>
+                    <div class="trend-meta">89k posts</div>
+                </div>
+                <div class="trend-item">
+                    <div class="trend-meta">
+                        <span>Deportes · En vivo</span>
+                        <span>...</span>
+                    </div>
+                    <div class="trend-name">Champions League</div>
+                    <div class="trend-meta">2.3M posts</div>
+                </div>
+            </div>
+
+            <div class="widget-box">
+                <div class="widget-header">A quién seguir</div>
+                <div class="trend-item" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Elon" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <div>
+                        <div style="font-weight: 700;">Elon Musk</div>
+                        <div style="color: var(--text-secondary); font-size: 13px;">@elonmusk</div>
+                    </div>
+                    <button style="margin-left: auto; background: white; color: black; border: none; padding: 6px 16px; border-radius: 9999px; font-weight: 700; cursor: pointer;">Seguir</button>
+                </div>
+                <div class="trend-item" style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=ESA" style="width: 40px; height: 40px; border-radius: 50%;">
+                    <div>
+                        <div style="font-weight: 700;">ESA</div>
+                        <div style="color: var(--text-secondary); font-size: 13px;">@esa</div>
+                    </div>
+                    <button style="margin-left: auto; background: white; color: black; border: none; padding: 6px 16px; border-radius: 9999px; font-weight: 700; cursor: pointer;">Seguir</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
